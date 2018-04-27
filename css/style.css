@@ -61,6 +61,28 @@ nav li a:hover:not(.active) {
   height: auto;
   text-align: center; }
 
+.btn {
+  background-color: #00dbdb;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+
+.btn:hover {
+  -webkit-filter: drop-shadow(0 0 15px #707070);
+  filter: drop-shadow(0 0 15px #707070); }
+
+.outputNm {
+  color: #008c8c;
+  font-size: 25px; }
+
 @media screen and (min-width: 350px) {
   .imgs {
     width: 150px;

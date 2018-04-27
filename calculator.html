@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>movinsurance - Calculator</title>
-    <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
-     <header>
+    <header>
         <div class="heading">
             <!-- <a href="index.html"><img id="logo" src="img/logo.jpg" alt="Logo"></a> -->
             <h1 class="title"><a href="index.html">movinsurance</a></h1>
@@ -25,14 +24,41 @@
             </ul>
         </nav>
     </header>
-        <div class="h2title">
+    <div class="h2title">
         <h2>Calculate your car insurance quote!</h2>
         <div>
             <p>Be careful. We may be too cheap.
             </p>
         </div>
     </div>
-</body>
+
+        <p>Name: </p>
+        <input type="text" id="inputName">
+        <br>
+        <br>
+        <p>Age: </p>
+        <input type="text" id="inputAge">
+        <br>
+        <br>
+        <p>Select your country: </p>
+        <br>
+        <form id="country">
+            <input id="rd1" type="radio" name="country" value="austria"> Austria
+            <br>
+            <input id="rd2" type="radio" name="country" value="germany"> Germany
+            <br>
+            <input id="rd3" type="radio" name="country" value="italy"> Italy
+        </form>
+        <br>
+        <p>HP: </p>
+        <input type="text" id="inputHp">
+        <br>
+        <br>
+        <button id="calc">Calculate</button>
+<br><br>
+<p class="outputNm" id="outputName"></p>
+    </body>
+ 
+<script src="js/script.js"></script>
 
 </html>
-

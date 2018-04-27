@@ -76,6 +76,33 @@ nav li a:hover:not(.active)
 	height: auto
 	text-align: center
 
+// index page
+
+.btn
+	background-color: $color2
+	border: none
+	color: black
+	padding: 15px 32px
+	text-align: center
+	text-decoration: none
+	display: inline-block
+	font-size: 22px
+	margin: 4px 2px
+	cursor: pointer
+	-webkit-transition-duration: 0.4s
+	transition-duration: 0.4s
+
+.btn:hover
+	-webkit-filter: drop-shadow(0 0 15px $color_shad)
+	filter: drop-shadow(0 0 15px $color_shad)
+
+// output from calculator
+
+.outputNm
+	color: $color1
+	font-size: 25px
+
+
 //breakpoint for small screens
 @media screen and (min-width: 350px)
 	.imgs
@@ -120,14 +147,9 @@ nav li a:hover:not(.active)
 		border-radius: 25px 25px 15px 15px
 
 
-// border radius for different browsers
+// border radius mixin for different browsers
 @mixin border-radius($radius)
 	-webkit-border-radius: $radius
 	-moz-border-radius: $radius
 	-ms-border-radius: $radius
 	-border-radius: $radius
-
-@mixin shdws()
-	-webkit-filter: drop-shadow(0 0 15px $color_shad)
-	filter: drop-shadow(0 0 15px $color_shad)
-	border-radius: 25px 25px 15px 15px

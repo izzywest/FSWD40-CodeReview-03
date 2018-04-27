@@ -1,0 +1,133 @@
+*
+	font-family: 'Alegreya Sans', sans-serif
+	margin: 0px auto
+
+body
+	margin: 15px
+	background: #f2f2f2
+a
+	text-decoration: none
+
+
+// save colors in variables
+$color1: #008c8c
+$color2: #00dbdb
+$color_shad: #707070
+
+// header section
+.title
+	font-size: 60px
+	text-align: center
+	position: relative
+	background-color: black
+
+.title a:active
+	color: $color1
+
+.title a:hover
+	color: $color2
+	webkit-filter: blur(1px)
+	filter: blur(1px)
+
+.title a:visited 
+	color: $color2
+
+
+// navigation bar styling
+nav ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+	overflow: hidden
+	background: #d8d8d8
+	position: sticky
+	top: 0
+	width: 100%
+
+nav li
+	float: left
+
+nav li a
+	display: block
+	color: $color1
+	text-align: center
+	padding: 14px 16px 
+	font-size: 25px
+
+
+// change background color to cyan when hovering over a list element
+nav li a:hover:not(.active)
+	background-color: $color2
+	color: black
+
+
+// page content
+
+
+//...our team
+.maindiv
+	display: grid
+	grid-template-columns: auto auto
+	grid-column-gap: 2.5%
+	width: 95%
+
+.grid_div
+	width: 100%
+	height: auto
+	text-align: center
+
+//breakpoint for small screens
+@media screen and (min-width: 350px)
+	.imgs
+		width: 150px
+		-webkit-filter: drop-shadow(0 0 15px $color_shad)
+		filter: drop-shadow(0 0 15px $color_shad)
+	.title
+		letter-spacing: 0px
+	.h2title
+		padding: 15px 50px 30px 15px
+		text-align: center
+		font-size: 20px
+	.grid_div p
+		font-size: 15px
+	.imgind
+		padding-top: 5px
+		width: 325px
+		-webkit-filter: drop-shadow(0 0 15px $color_shad)
+		filter: drop-shadow(0 0 15px $color_shad)
+		border-radius: 25px 25px 15px 15px
+
+
+//breakpoint for big screens
+@media screen and (min-width: 900px)
+	.imgs
+		width: 325px
+		-webkit-filter: drop-shadow(0 0 15px $color_shad)
+		filter: drop-shadow(0 0 15px $color_shad)
+	.title
+		letter-spacing: 30px
+	.h2title
+		padding: 15px 50px 30px 15px
+		text-align: center
+		font-size: 40px
+	.grid_div p
+		font-size: 35px
+	.imgind
+		padding-top: 10px
+		width: 600px
+		-webkit-filter: drop-shadow(0 0 15px $color_shad)
+		filter: drop-shadow(0 0 15px $color_shad)
+		border-radius: 25px 25px 15px 15px
+
+
+// border radius for different browsers
+@mixin border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	-border-radius: $radius
+
+@mixin shdws()
+	-webkit-filter: drop-shadow(0 0 15px $color_shad)
+	filter: drop-shadow(0 0 15px $color_shad)
+	border-radius: 25px 25px 15px 15px

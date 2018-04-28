@@ -1,6 +1,5 @@
-
 // function to get the result after click on button
-// calculate insurance:
+// calculate insurance
 document.getElementById("calc").onclick = function() {
 
 // save the variables (Usr = inputted data by user), if name, age and/or hp is empty, alert!

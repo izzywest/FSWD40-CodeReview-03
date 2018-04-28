@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>movinsurance - Our Team</title>
+    <title>Our Team - movinsurance</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
@@ -12,11 +12,14 @@
 </head>
 
 <body>
+
     <header>
+
         <div class="heading">
             <!-- <a href="index.html"><img id="logo" src="img/logo.jpg" alt="Logo"></a> -->
             <h1 class="title"><a href="index.html">movinsurance</a></h1>
         </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Start</a></li>
@@ -24,11 +27,16 @@
                 <li><a href="team.html">Our Team</a></li>
             </ul>
         </nav>
+
     </header>
+
+<!-- overview of 4 people of the team, at line 63, a table with json with *all* employees -->
+
     <div class="h2title">
         <h2>Our Team</h2>
         <p>gives you peace of mind, for wherever the road takes you.</p>
     </div>
+
     <div class="maindiv">
         <div class="grid_div">
             <img class="imgs" src="img/av1.png" alt="woman with glasses">
@@ -52,7 +60,6 @@
         </div>
     </div>
 
-
     <script>
     document.writeln("<br><br>");
     document.writeln("<h2>Table of employees:</h2>");
@@ -65,16 +72,17 @@
     document.write("<tr>");
     document.write("<td>" + json[i].firstName + "<td>" + json[i].lastName + "</td>" + "<td>" + json[i].eMail + "</td>" + "<td>" + json[i].jobTitle + "</td>");
     document.write("</tr>");
-    }   
+    }
+
     document.write("</table>");
     document.writeln("<br><br>")
+
 </script> 
 
 
-
-</body>
 <footer>
-    &#127892; SW - 2018 &#127892;
+&#127892; S. Westenberger - 2018 &#127892;
 </footer>
 
+</body>
 </html>

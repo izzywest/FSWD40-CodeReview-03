@@ -31,8 +31,11 @@ document.getElementById("calc").onclick = function() {
 	insCost = Math.round(insCost * 100) / 100;
 	var result =  "Hey " + nameUsr + ", you are " + ageUsr 
 	+ " years old and your car has " + hpUsr 
-	+ " horsepower, then you have to pay " + insCost + " € per year.";
+	+ " horsepower, you have to pay " + insCost + " €.";
+
+	var sP = "This price is not guaranteed.<br>Information provided without guarantee."
 
 	document.getElementById("outputName").innerHTML = result;
 
+	document.getElementById("smallPrint").innerHTML = sP;
 }

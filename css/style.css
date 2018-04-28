@@ -97,13 +97,7 @@ th {
   font-size: 18px;
   margin: 3px 1px; }
 
-.btn:hover {
-  -webkit-filter: drop-shadow(0 0 5px #707070);
-  filter: drop-shadow(0 0 5px #707070);
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s; }
-
-.btn2:hover {
+.btn:hover, .btn2:hover {
   -webkit-filter: drop-shadow(0 0 15px #707070);
   filter: drop-shadow(0 0 15px #707070);
   -webkit-transition-duration: 0.4s;
@@ -114,7 +108,11 @@ th {
 
 #outputName {
   color: #008c8c;
-  font-size: 25px; }
+  font-size: 25px;
+  background-color: #d8d8d8; }
+
+#smallPrint {
+  color: #707070; }
 
 @media screen and (min-width: 350px) {
   body {
@@ -136,7 +134,8 @@ th {
     filter: drop-shadow(0 0 15px #707070); }
 
   .imgindx {
-    width: 250px; }
+    width: 250px;
+    border-radius: 0px 50px 0px 50px; }
 
   .title {
     letter-spacing: 0px; }
@@ -168,7 +167,8 @@ th {
     filter: drop-shadow(0 0 15px #707070); }
 
   .imgindx {
-    width: 550px; }
+    width: 550px;
+    border-radius: 50px 0px 50px 0px; }
 
   .title {
     letter-spacing: 30px; }

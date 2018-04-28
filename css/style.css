@@ -79,7 +79,7 @@ nav li a:hover:not(.active) {
   -webkit-filter: drop-shadow(0 0 15px #707070);
   filter: drop-shadow(0 0 15px #707070); }
 
-.outputNm {
+#outputName {
   color: #008c8c;
   font-size: 25px; }
 

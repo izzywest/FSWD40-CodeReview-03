@@ -109,6 +109,9 @@ th {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s; }
 
+.calculator {
+  width: 50%; }
+
 #outputName {
   color: #008c8c;
   font-size: 25px; }

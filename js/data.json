@@ -1,0 +1,52 @@
+var json = [{
+        "firstName": "Nellie",
+        "lastName": "Baker",
+        "eMail": "n.baker@movinsurance.com",
+        "jobTitle": "CEO",
+    }, {
+        "firstName": "Jeffery",
+        "lastName": "Brooks",
+        "eMail": "j.brooks@movinsurance.com",
+        "jobTitle": "Accounting",
+    }, {
+        "firstName": "Kyle",
+        "lastName": "Appleton",
+        "eMail": "k.appleton@test.com",
+        "jobTitle": "Office admin",
+    }, {
+        "firstName": "Gabriella",
+        "lastName": "Stevens",
+        "eMail": "g.stevens@movinsurance.com",
+        "jobTitle": "Secretary",
+    }, {
+        "firstName" : "Geneva",
+        "lastName" : "Walters",
+        "eMail" : "g.walter@movinsurance.com",
+        "jobTitle" : "Office"
+    }, {
+        "firstName" : "Dennis",
+        "lastName" : "Fisher",
+        "eMail" : "d.fisher@movinsurance.com",
+        "jobTitle" : "Office"
+    }, {
+        "firstName" : "Ray",
+        "lastName" : "Rodriguez",
+        "eMail" : "r.rodriguez@movinsurance.com",
+        "jobTitle" : "IT"
+    }, {
+        "firstName" : "Belinda",
+        "lastName" : "Wood",
+        "eMail" : "b.wood@movinsurance.com",
+        "jobTitle" : "External sales"
+    }, {
+        "firstName" : "Toni",
+        "lastName" : "Rhodes",
+        "eMail" : "t.rhodes@movinsurance.com",
+        "jobTitle" : "Support"
+    }, {
+        "firstName" : "Jack",
+        "lastName" : "Gomez",
+        "eMail" : "j.gomez@movinsurance.com",
+        "jobTitle" : "HR manager"
+    }
+];

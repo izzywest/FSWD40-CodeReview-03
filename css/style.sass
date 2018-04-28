@@ -3,16 +3,26 @@
 	margin: 0px auto
 
 body
-	margin: 15px
 	background: #f2f2f2
-a
-	text-decoration: none
 
 
 // save colors in variables
 $color1: #008c8c
 $color2: #00dbdb
 $color_shad: #707070
+
+// commmon things
+
+a
+	text-decoration: none
+
+footer
+	text-align: center
+	position: relative
+	background-color: $color_shad
+	color: white
+	padding: 5px 0
+
 
 // header section
 .title
@@ -54,17 +64,12 @@ nav li a
 	padding: 14px 16px 
 	font-size: 25px
 
-
-// change background color to cyan when hovering over a list element
 nav li a:hover:not(.active)
 	background-color: $color2
 	color: black
 
 
-// page content
-
-
-//...our team
+// team.html
 .maindiv
 	display: grid
 	grid-template-columns: auto auto
@@ -76,8 +81,20 @@ nav li a:hover:not(.active)
 	height: auto
 	text-align: center
 
-// index page
 
+// table stylesheet
+
+table
+	width: 70%
+	color: $color_shad
+
+th
+	text-align: left
+	color: $color1
+
+
+
+// buttons small (btn2) and big (btn) 
 .btn
 	background-color: $color2
 	border: none
@@ -88,27 +105,54 @@ nav li a:hover:not(.active)
 	display: inline-block
 	font-size: 22px
 	margin: 4px 2px
-	cursor: pointer
+
+.btn2
+	background-color: $color2
+	border: none
+	color: black
+	padding: 10px 27px
+	text-align: center
+	text-decoration: none
+	display: inline-block
+	font-size: 18px
+	margin: 3px 1px
+
+.btn:hover
+	-webkit-filter: drop-shadow(0 0 5px $color_shad)
+	filter: drop-shadow(0 0 5px $color_shad)
 	-webkit-transition-duration: 0.4s
 	transition-duration: 0.4s
 
-.btn:hover
+.btn2:hover
 	-webkit-filter: drop-shadow(0 0 15px $color_shad)
 	filter: drop-shadow(0 0 15px $color_shad)
+	-webkit-transition-duration: 0.4s
+	transition-duration: 0.4s
+
+
 
 // output from calculator
-
 #outputName
 	color: $color1
 	font-size: 25px
 
-
 //breakpoint for small screens
 @media screen and (min-width: 350px)
+	body
+		margin: 5px
+	h2
+		font-weight: 600
+	th
+		font-size: 12pt
+		font-weight: 600
+	td
+		font-size: 10pt
 	.imgs
-		width: 150px
+		width: 140px
 		-webkit-filter: drop-shadow(0 0 15px $color_shad)
 		filter: drop-shadow(0 0 15px $color_shad)
+	.imgindx
+		width: 250px
 	.title
 		letter-spacing: 0px
 	.h2title
@@ -117,20 +161,25 @@ nav li a:hover:not(.active)
 		font-size: 20px
 	.grid_div p
 		font-size: 15px
-	.imgind
-		padding-top: 5px
-		width: 325px
-		-webkit-filter: drop-shadow(0 0 15px $color_shad)
-		filter: drop-shadow(0 0 15px $color_shad)
-		border-radius: 25px 25px 15px 15px
 
 
 //breakpoint for big screens
 @media screen and (min-width: 900px)
+	body
+		margin: 20px
+	h2
+		font-weight: 900
+	th
+		font-size: 17pt
+		font-weight: 900
+	td
+		font-size: 15pt
 	.imgs
-		width: 325px
+		width: 250px
 		-webkit-filter: drop-shadow(0 0 15px $color_shad)
 		filter: drop-shadow(0 0 15px $color_shad)
+	.imgindx
+		width: 550px
 	.title
 		letter-spacing: 30px
 	.h2title
@@ -139,15 +188,9 @@ nav li a:hover:not(.active)
 		font-size: 40px
 	.grid_div p
 		font-size: 35px
-	.imgind
-		padding-top: 10px
-		width: 600px
-		-webkit-filter: drop-shadow(0 0 15px $color_shad)
-		filter: drop-shadow(0 0 15px $color_shad)
-		border-radius: 25px 25px 15px 15px
 
 
-// border radius mixin for different browsers
+// border radius mixin for different browsers (safari, firefox, ie, chrome...)
 @mixin border-radius($radius)
 	-webkit-border-radius: $radius
 	-moz-border-radius: $radius
